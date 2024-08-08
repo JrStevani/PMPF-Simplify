@@ -1,3 +1,7 @@
+# PMPF Simplify
+
+<a href=""><strong>Projeto detalhado</strong></a>
+
 <h1>Descrição do Projeto e Funcionalidades</h1>
 <p>Este projeto tem como objetivo principal a padronização e análise de dados de produtos presentes em notas fiscais eletrônicas (NFes). Ele é dividido em duas etapas principais: a padronização de dados e a identificação de erros, seguida pela análise estatística e cálculo de variações. As funcionalidades do projeto incluem:</p>
 
