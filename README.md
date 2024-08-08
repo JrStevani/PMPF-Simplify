@@ -1,0 +1,2 @@
+# PMPF-Simplify
+ Este projeto realiza a padronização e análise de dados de produtos de notas fiscais eletrônicas. Ele carrega e valida dados, filtra valores discrepantes e calcula métricas estatísticas como variâncias e desvios padrão. O projeto gera relatórios detalhados, destacando erros e variações de preços, e salva os resultados em arquivos Excel organizados para revisão e análise. Utiliza Python, Pandas e outras bibliotecas para processamento eficiente de dados e criação de interfaces gráficas.

@@ -1,0 +1,22 @@
+# Arquivo Filtro.xlsx
+- Arquivo com 1 aba
+- Arquivo com 3 colunas (DESC_PRODUTO, CODG_EAN, DESC_PRODUTO_IRRELEVANTES)
+
+-------------------------------------------------------------------------------------------
+# Fornecedores
+- Arquivo com 1 aba
+- Arquivo com 3 colunas (NUMR_INSC_ESTADUAL_EMISSOR, DESC_SUBSETOR_SEFAZ, INDICES_DOS_SETORES)
+
+-------------------------------------------------------------------------------------------
+# Gtin
+- Arquivo com 1 aba
+- Arquivo com 12 colunas (CODG_EAN, DESC_PRODUTO_SIMPLIFICADA, UNIDADE DE MEDIDA, VALOR (R$), (PMPF), 1, 2, 3, 4, 5, 6, QTDE)
+
+-------------------------------------------------------------------------------------------
+# Filtro_IEE
+- Arquivo de 1 aba
+_ Arquivo com 1 coluna (CODG_EAN)
+
+-------------------------------------------------------------------------------------------
+# AGUA MINERAL 3
+- Tabela de exemplo para analise
