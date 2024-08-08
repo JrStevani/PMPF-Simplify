@@ -10,15 +10,22 @@
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 20px;
-            
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 15px;
         }
         main {
             padding: 15px;
             margin: -20px auto auto auto;
             width: 90vw;
-            border: 1px 1px solid black;
+            max-width: 1200px;
+            background-color: #fff;
+            border: 1px solid #ccc;
             box-shadow: 2px 2px 5px rgba(62, 62, 62, 0.775);
+            border-radius: 8px;
+            text-align: justify;
         }
+
         h1, h2, h3 {
             color: #333;
         }
@@ -31,12 +38,77 @@
             padding: 2px 4px;
             border-radius: 4px;
         }
+        .project-image {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        @media (max-width: 768px) {
+            * {
+                text-align: justify;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            body {
+                margin: auto;
+                text-align: center;
+            }
+            main {
+                width: 83vw;
+                margin: -40px auto auto auto;
+            }
+            h1 {
+                font-size: 1em;
+            }
+            h2 {
+                font-size: 0.9em;
+            }
+            h3 {
+                font-size: 0.8em;
+            }
+            p {
+                font-size: 0.8em;
+            }
+            
+            img {
+                width: 80vw;
+            }
+        }
+        @media (max-width: 480px) {
+            body {
+                text-align: center;
+            }
+            main {
+                width: 70vw;
+                margin: auto;
+            }
+            h1 {
+                font-size: 1em;
+            }
+            h2 {
+                font-size: 0.9em;
+            }
+            h3 {
+                font-size: 0.8em;
+            }
+            p {
+                font-size: 0.8em;
+            }
+
+            img {
+                width: 70vw;
+            }
+        }
     </style>
 </head>
 <body>
     <main>
         <h1>Descrição do Projeto e Funcionalidades</h1>
         <p>Este projeto tem como objetivo principal a padronização e análise de dados de produtos presentes em notas fiscais eletrônicas (NFes). Ele é dividido em duas etapas principais: a padronização de dados e a identificação de erros, seguida pela análise estatística e cálculo de variações. As funcionalidades do projeto incluem:</p>
+        
+        <div><img src="confg/tela_principal01.PNG" alt="Tela Inicial do Aplicativo" class="project-image"></div>
+
         <ul>
             <li><strong>Carregamento e validação de dados</strong>: Leitura de arquivos Excel contendo dados de produtos e tabela de erros.</li>
             <li><strong>Padronização de dados</strong>: Aplicação de intervalos de aceitação para valores unitários e filtragem de valores discrepantes.</li>
@@ -44,6 +116,9 @@
             <li><strong>Geração de relatórios</strong>: Criação de relatórios detalhados com análise de erros, variações de preços e distribuição de vendas por setor.</li>
             <li><strong>Salvamento de resultados</strong>: Armazenamento dos dados padronizados e analisados em arquivos Excel para posterior revisão e utilização.</li>
         </ul>
+        
+        <div><img src="confg/tela_preenchida01.PNG" alt="Tela com Dados Informados" class="project-image"></div>
+
         <h2>Detalhamento das Etapas</h2>
         <h3>Primeira Etapa: Padronização de Dados e Identificação de Erros</h3>
         <ol>
@@ -55,6 +130,9 @@
             <li><strong>Compilação dos Resultados</strong>: Cálculo de várias métricas para cada produto e armazenamento em tabelas de resultados e fornecedores.</li>
             <li><strong>Salvamento dos Resultados</strong>: Salvamento de DataFrames resultantes em um arquivo Excel, organizados em várias abas, incluindo dados padronizados, tabela de erros, dados tratados, relatório e análise de erros por fornecedores.</li>
         </ol>
+        
+        <div><img src="confg/tela_status01.PNG" alt="Tela com Exibição de Status" class="project-image"></div>
+
         <h3>Segunda Etapa: Análise Estatística e Cálculo de Variações</h3>
         <ol>
             <li><strong>Preparação dos Dados</strong>: Carregamento dos dados previamente padronizados e filtrados. Inicialização de estruturas de dados para armazenar resultados da análise estatística.</li>
@@ -63,6 +141,7 @@
             <li><strong>Compilação de Relatórios</strong>: Criação de relatórios detalhados contendo análise de quantidade de erros, variações de preços e distribuições de vendas por setor. Preenchimento de tabelas com dados consolidados e estatísticas calculadas.</li>
             <li><strong>Salvamento Final dos Resultados</strong>: Salvamento de todos os resultados e análises em um arquivo Excel, organizados em abas específicas para fácil acesso e revisão.</li>
         </ol>
+        
         <h2>Tecnologias Utilizadas</h2>
         <ul>
             <li><strong>Python</strong>: Linguagem principal de programação utilizada para todo o desenvolvimento do projeto.</li>
