@@ -988,7 +988,8 @@ class Ui_Form(object):
 
         for caminho_arquivo in caminho_dos_arquivos:
             try:
-                pass
+                self.label_5_medicamentos.setText('Projeto ainda em desenvolvimento.')
+                 # Projeto ainda em desenvolvimento. Aba de medicamentos ainda está sendo construída.
             except:
                 pass
 
