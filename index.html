@@ -8,104 +8,112 @@
     <style>
        body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
             line-height: 1.6;
-            background-color: #f4f4f4;
-            color: #333;
-            padding: 15px;
-            
-        }
-        main {
-            padding: 15px;
-            margin: -30px auto auto auto;
-            width: 90vw;
-            max-width: 1200px;
-            background-color: #fff;
-            border: 1px solid #ccc;
-            box-shadow: 2px 2px 5px rgba(62, 62, 62, 0.775);
-            border-radius: 8px;
-            text-align: justify;
         }
 
-        h1, h2, h3 {
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 90%;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            margin-top: 40px;
+            font-size: 1.5em;
+        }
+
+        h3 {
+            margin-top: 20px;
+            color: #555;
+            font-size: 1.2em;
+        }
+
+        p, ol {
+            margin-bottom: 15px;
+        }
+
+        a { 
+            text-decoration: none;
             color: #333;
         }
-        ul {
-            list-style-type: disc;
-            margin-left: 20px;
-        }
-        code {
-            background: #f4f4f4;
-            padding: 2px 4px;
-            border-radius: 4px;
-        }
-        .project-image {
-            max-width: 100%;
-            height: auto;
-            margin: 20px 0;
-            border-radius: 8px;
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-        }
-        a {
-            text-decoration: none;
-            color: black;
-        }
+
         a:hover {
             text-decoration: underline;
-            color: #333;
+            color: #555;
         }
+
+        img {
+            border-radius: 5px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer > p {
+            margin: 0;
+        }
+
+        /* Media Queries */
         @media (max-width: 768px) {
-            * {
-                text-align: justify;
-                font-family: Arial, Helvetica, sans-serif;
-            }
-            body {
-                margin: auto;
-                text-align: center;
-            }
-            main {
-                width: 83vw;
-                margin: -40px auto auto auto;
-            }
             h1 {
-                font-size: 1em;
-            }
-            h2 {
-                font-size: 0.9em;
-            }
-            h3 {
-                font-size: 0.8em;
-            }
-            p {
-                font-size: 0.8em;
-            }
-            
-            img {
-                width: 80vw;
-            }
-        }
-        @media (max-width: 480px) {
-            body {
-                text-align: center;
-            }
-            main {
-                width: 85vw;
-                margin: -20px auto auto auto;
-            }
-            h1 {
-                font-size: 1em;
-            }
-            h2 {
-                font-size: 0.9em;
-            }
-            h3 {
-                font-size: 0.8em;
-            }
-            p {
-                font-size: 0.8em;
+                font-size: 1.8em;
             }
 
-            img {
-                width: 70vw;
+            h2 {
+                font-size: 1.3em;
+            }
+
+            h3 {
+                font-size: 1em;
+            }
+
+            main {
+                padding: 10px;
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            h2 {
+                font-size: 1.2em;
+            }
+
+            h3 {
+                font-size: 0.9em;
+            }
+
+            main {
+                padding: 5px;
             }
         }
     </style>
