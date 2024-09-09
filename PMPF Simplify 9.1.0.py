@@ -154,13 +154,13 @@ class Ui_Form(object):
 
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(1040, 495)
+        Form.resize(1060, 495)
         icon = QtGui.QIcon(r".\\confg\\icon.ico")
         Form.setWindowIcon(icon)
 
         self.tabWidget = QtWidgets.QTabWidget(Form)
         self.tabWidget.setEnabled(True)
-        self.tabWidget.setGeometry(QtCore.QRect(10, 10, 1020, 465))
+        self.tabWidget.setGeometry(QtCore.QRect(10, 10, 1040, 465))
         self.tabWidget.setObjectName("tabWidget")
 
         self.tab_bebidas = QtWidgets.QWidget()
